@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Hangman_Game.css">
+</head>
+<body>
+
+    <div class="main_container">
+
+        <div class="try_again_container">
+            <div class="content">
+
+                <img src="./images/lost.gif" alt="gif">
+                <h2>Game Over</h2>
+                <p>The correct word was : <b> rainbow </b></p>
+                <button class="btn" id="play_again">Play Again</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="image_section">
+                <img src="./images/hangman-0.svg" alt="hangman-img" class="hg_image">
+                <h1>Hangman Game</h1>
+            </div>
+
+            <div class="content_area">
+
+                <div class="list">
+                    <ul id="word_display">
+
+                        <!-- <li class="letter"></li>
+                        <li class="letter"></li>
+                        <li class="letter"></li>
+                        <li class="letter gussed">a</li>
+                        <li class="letter"></li>
+                        <li class="letter"></li>
+                        <li class="letter"></li> -->
+                    </ul>
+                </div>
+
+                <h3 class="hint"> Hint: <b> Lorem ipsum dolor sit amet consectetur adipisicing elit. </b> </h3>
+
+                <h3 class="incorrect_gussess">incorrect guesses:  <b> 0 / 6 </b></h3>
+
+
+
+                <div class="buttons">
+                    <!-- <button class="btn">a</button>
+                    <button class="btn">b</button>
+                    <button class="btn">c</button>
+                    <button class="btn">d</button>
+                    <button class="btn">e</button>
+                    <button class="btn">f</button>
+                    <button class="btn">g</button>
+                    <button class="btn">h</button>
+                    <button class="btn">i</button>
+                    <button class="btn">j</button>
+                    <button class="btn">k</button>
+                    <button class="btn">l</button>
+                    <button class="btn">m</button>
+                    <button class="btn">n</button>
+                    <button class="btn">o</button>
+                    <button class="btn">p</button>
+                    <button class="btn">q</button>
+                    <button class="btn">r</button>
+                    <button class="btn">s</button>
+                    <button class="btn">t</button>
+                    <button class="btn">u</button>
+                    <button class="btn">v</button>
+                    <button class="btn">w</button>
+                    <button class="btn">x</button>
+                    <button class="btn">y</button>
+                    <button class="btn">z</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/wordList.js"></script>
+    <script src="js/Hangman_Game.js"></script>
+</body>
+</html>

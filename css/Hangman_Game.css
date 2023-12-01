@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_container{
+    background-color: #414141;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+
+.container{
+    width: 800px;
+    height: 70vh;
+    background-color: wheat;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.content_area{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.list ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li{
+    list-style: none;
+}
+
+.letter{
+    width: 30px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid black;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+
+
+}
+
+
+.list ul .letter.gussed{
+    border-color: transparent;
+    margin: -40px 0 35px;
+}
+
+.hint{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.hint b{
+    margin-left: 3px;
+    font-size: 1rem;
+    color: #3f3f3f;
+}
+
+.incorrect_gussess{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.incorrect_gussess b{
+    color: red;
+    font-size: 1.3rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.buttons button{
+    width: calc(100% /9 - 5px );
+    text-transform: uppercase;
+    color: white;
+    background-color: #212121;
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.buttons button:hover{
+    background-color: #5E63BA;
+}
+
+.buttons button[disabled]{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+/* -----------------------------try Again And Play Again */
+
+.try_again_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: 999;
+
+    transition: opacity 0.4s ease;
+}
+.try_again_container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.try_again_container .content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 500px;
+
+}
+
+.try_again_container .content img{
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.try_again_container .content h2{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.try_again_container .content p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.try_again_container .content .btn{
+    background-color: #5E63BA;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.try_again_container .content .btn:hover{
+    background-color: #212121;
+}
+
+
+
+
+@media (max-width: 780px) {
+    .container{
+        flex-direction: column;
+        padding: 30px 15px;
+        align-items: center;
+        height: 98vh;
+    }
+
+    .image_section img{
+        max-width: 200px;
+    }
+
+    .image_section h1{
+        display: none;
+    }
+    
+    .container{
+        gap:2rem;
+    }
+}
